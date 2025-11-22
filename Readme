@@ -1,1 +1,167 @@
+# 📘 Course Recommendation System – README
 
+## 🧠 Overview
+
+The **Course Recommendation System** is a Python-based project developed using **Pandas**, **Matplotlib**, and **Google Colab**. The system recommends courses to students based on their:
+
+* Understanding Level
+* IQ Score
+* Selected Subject
+
+It loads student and course datasets, authenticates users, recommends courses, and displays analytics through visualizations.
+
+---
+
+## 📂 Project Structure
+
+```
+├── Studentdata.csv
+├── courses_dataset.csv
+├── Personalized_Course_Recommendation_System.ipynb
+└── README.md
+```
+
+---
+
+## 🚀 Features
+
+### 🔐 1. Student Login
+
+Students log in using their **username** and **password**.
+Login credentials are validated using the `Studentdata.csv` dataset.
+
+---
+
+### 📚 2. Subject Selection
+
+Students choose a subject from the list of subjects available in the `courses_dataset.csv`.
+
+---
+
+### 🎯 3. Course Recommendation Logic
+
+Course difficulty is matched to the student profile.
+
+| Understanding Level | IQ Score | Recommended Courses     |
+| ------------------- | -------- | ----------------------- |
+| High                | > 120    | Advanced (Top 3)        |
+| Medium              | 90–120   | Intermediate (Middle 3) |
+| Low                 | < 90     | Beginner (Last 3)       |
+
+---
+
+### 🌐 4. Clickable Course Links
+
+Each recommended course displays:
+
+* Course Name
+* Platform
+* Clickable URL (opens in a new tab)
+
+---
+
+### 📊 5. Dashboard Visualization
+
+A bar chart shows the number of courses available per platform.
+This helps students understand course platform popularity.
+
+---
+
+## 🛠 Technologies Used
+
+* Python
+* Pandas
+* Matplotlib
+* Google Colab
+* HTML (for clickable link rendering)
+
+---
+
+## 📥 How to Run
+
+### Step 1: Upload Data Files
+
+Upload these files into your Colab environment:
+
+* `Studentdata.csv`
+* `courses_dataset.csv`
+
+They should be placed in:
+
+```
+/content/
+```
+
+---
+
+### Step 2: Run the Notebook
+
+Open:
+
+```
+Personalized_Course_Recommendation_System.ipynb
+```
+
+and run all cells.
+
+---
+
+### Step 3: Login
+
+Enter:
+
+* Username
+* Password
+
+If valid, the system proceeds to subject selection and recommendations.
+
+---
+
+### Step 4: View Recommendations
+
+The system displays top recommended courses with clickable links.
+
+---
+
+### Step 5: View Dashboard
+
+A bar chart appears showing platform-wise course distribution.
+
+---
+
+## 📊 Sample Output (Text Format)
+
+```
+Datasets Loaded Successfully
+
+Enter Username: pardha
+Enter Password: 1234
+
+Welcome Pardha Saradhi! | Understanding: High
+
+Available Subjects:
+1. Python
+2. Machine Learning
+3. Web Development
+...
+```
+
+---
+
+## 🤝 Contributions
+
+Feel free to fork the repository and submit pull requests to improve the system.
+
+---
+
+## 📜 License
+
+This project is open-source and free to use.
+
+---
+
+If you want, I can also generate:
+✅ GitHub repository description
+✅ Badges (Python version, license, stars, etc.)
+✅ A professional project logo
+Just tell me!
